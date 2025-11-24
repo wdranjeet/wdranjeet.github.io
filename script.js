@@ -1,3 +1,7 @@
+// Mobile menu toggle
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', function(e) {
@@ -16,10 +20,6 @@ document.querySelectorAll('.nav-link').forEach(link => {
         navMenu.classList.remove('active');
     });
 });
-
-// Mobile menu toggle
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('nav-menu');
 
 hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
@@ -135,22 +135,25 @@ function typeEffect() {
 setTimeout(typeEffect, 1000);
 
 // Animate skill bars on scroll
+let skillBarsAnimated = false;
 const animateSkillBars = () => {
+    if (skillBarsAnimated) return;
+    
     const skillsSection = document.querySelector('.skills-section');
     const skillBars = document.querySelectorAll('.skill-progress');
     const sectionTop = skillsSection.offsetTop;
-    const sectionHeight = skillsSection.clientHeight;
     const scrollPosition = window.pageYOffset + window.innerHeight;
     
     if (scrollPosition > sectionTop + 100) {
         skillBars.forEach(bar => {
-            const width = bar.style.width;
+            const targetWidth = bar.getAttribute('style').match(/width:\s*(\d+%)/)?.[1] || '0%';
             bar.style.width = '0%';
             setTimeout(() => {
-                bar.style.width = width;
+                bar.style.width = targetWidth;
             }, 100);
         });
         
+        skillBarsAnimated = true;
         // Remove event listener after animation
         window.removeEventListener('scroll', animateSkillBars);
     }
@@ -173,25 +176,6 @@ const createScrollToTopBtn = () => {
     const btn = document.createElement('button');
     btn.innerHTML = '<i class="fas fa-arrow-up"></i>';
     btn.className = 'scroll-to-top';
-    btn.style.cssText = `
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        width: 50px;
-        height: 50px;
-        background-color: var(--primary-color);
-        color: white;
-        border: none;
-        border-radius: 50%;
-        cursor: pointer;
-        display: none;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.2rem;
-        transition: all 0.3s ease;
-        z-index: 999;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    `;
     
     document.body.appendChild(btn);
     
@@ -208,14 +192,6 @@ const createScrollToTopBtn = () => {
             top: 0,
             behavior: 'smooth'
         });
-    });
-    
-    btn.addEventListener('mouseenter', () => {
-        btn.style.transform = 'translateY(-5px)';
-    });
-    
-    btn.addEventListener('mouseleave', () => {
-        btn.style.transform = 'translateY(0)';
     });
 };
 
