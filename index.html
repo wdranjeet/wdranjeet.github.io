@@ -1,429 +1,589 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal Portfolio - Showcasing my work, skills, and services">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal Portfolio - Showcasing my work, skills, and services"
+    />
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <!-- Sidebar -->
     <aside class="sidebar" id="sidebar">
-        <div class="sidebar-content">
-            <!-- Profile Section -->
-            <div class="profile-section">
-                <div class="profile-image">
-                    <img src="profile-150x150.png" alt="Ranjeet Kumar Mahato">
-                </div>
-                <h2 class="profile-name">Ranjeet Kumar Mahato</h2>
-            </div>
-
-            <!-- Dark Mode Toggle -->
-            <div class="dark-mode-toggle">
-                <button id="darkModeToggle" class="dark-mode-btn" aria-label="Toggle dark mode">
-                    <i class="fas fa-moon"></i>
-                </button>
-            </div>
-
-            <!-- Social Links -->
-            <div class="sidebar-social">
-                <a href="https://www.facebook.com/profile.php?id=521723620" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.linkedin.com/in/mahtoranjeet/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/wdranjeet" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="mailto:wdranjeet.m@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
-            </div>
-
-            <!-- Navigation Menu -->
-            <nav class="sidebar-nav">
-                <ul class="nav-menu">
-                    <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
-                    <li><a href="#skills" class="nav-link"><i class="fas fa-cogs"></i> Skills</a></li>
-                    <li><a href="#resume" class="nav-link"><i class="fas fa-file-alt"></i> Resume</a></li>
-                    <li><a href="#portfolio" class="nav-link"><i class="fas fa-briefcase"></i> Portfolio</a></li>
-                    <li><a href="#services" class="nav-link"><i class="fas fa-server"></i> Services</a></li>
-                    <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
-                </ul>
-            </nav>
-
-            <!-- Footer -->
-            <div class="sidebar-footer">
-                <p>&copy; <strong></strong>All Rights Reserved.</p>
-                <p>Powered by <span class="highlight">Ranjeet Kumar Mahato</span></p>
-            </div>
+      <div class="sidebar-content">
+        <!-- Profile Section -->
+        <div class="profile-section">
+          <div class="profile-image">
+            <img src="profile-150x150.png" alt="Ranjeet Kumar" />
+          </div>
+          <h2 class="profile-name">Ranjeet Kumar</h2>
         </div>
 
-        <!-- Mobile Toggle -->
-        <div class="hamburger" id="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+        <!-- Dark Mode Toggle -->
+        <div class="dark-mode-toggle">
+          <button
+            id="darkModeToggle"
+            class="dark-mode-btn"
+            aria-label="Toggle dark mode"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
         </div>
+
+        <!-- Social Links -->
+        <div class="sidebar-social">
+                      <a
+            href="https://www.linkedin.com/in/mahtoranjeet/"
+            target="_blank"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+                    <a
+            href="https://huggingface.co/wdranjeet"
+            target="_blank"
+            aria-label="Hugging Face"
+            ><i class="fab fa-laptop-code"></i
+          ></a>
+   
+
+          <a
+            href="https://github.com/wdranjeet"
+            target="_blank"
+            aria-label="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+                 <a
+            href="https://www.facebook.com/profile.php?id=521723620"
+            target="_blank"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="mailto:wdranjeet.m@gmail.com"
+            target="_blank"
+            aria-label="Email"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="sidebar-nav">
+          <ul class="nav-menu">
+            <li>
+              <a href="#home" class="nav-link active"
+                ><i class="fas fa-home"></i> Home</a
+              >
+            </li>
+            <li>
+              <a href="#about" class="nav-link"
+                ><i class="fas fa-user"></i> About</a
+              >
+            </li>
+            <li>
+              <a href="#skills" class="nav-link"
+                ><i class="fas fa-cogs"></i> Skills</a
+              >
+            </li>
+            <li>
+              <a href="#resume" class="nav-link"
+                ><i class="fas fa-file-alt"></i> Resume</a
+              >
+            </li>
+            <li>
+              <a href="#portfolio" class="nav-link"
+                ><i class="fas fa-briefcase"></i> Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#services" class="nav-link"
+                ><i class="fas fa-server"></i> Services</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="nav-link"
+                ><i class="fas fa-envelope"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Footer -->
+        <div class="sidebar-footer">
+          <p>&copy; <strong></strong>All Rights Reserved.</p>
+          <p>Powered by <span class="highlight">Ranjeet Kumar</span></p>
+        </div>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </aside>
 
     <!-- Main Content -->
     <main class="main-content" id="mainContent">
-
-    <!-- Home Section -->
-    <section id="home" class="home-section">
+      <!-- Home Section -->
+      <section id="home" class="home-section">
         <div class="home-hero">
-            <h1>Ranjeet Kumar Mahato</h1>
-            <h2 class="hero-title">I'm Web Developer</h2>
+          <h1>Ranjeet Kumar</h1>
+          <h2 class="hero-title">I'm Web Developer / AI Builder</h2>
         </div>
-    </section>
+      </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
+      <!-- About Section -->
+      <section id="about" class="about-section">
         <div class="container">
-            <div class="section-title">
-                <h2>About Me</h2>
+          <div class="section-title">
+            <h2>About Me</h2>
+          </div>
+          <div class="about-content">
+            <div class="about-image">
+              <img src="profile_400x400.png" alt="Profile Picture" />
             </div>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="profile_400x400.png" alt="Profile Picture">
-                </div>
-                <div class="about-text">
-                    <p>I'm a Web Application Developer with 14+ years of experience building fast, secure, and user-focused digital products. I work across Drupal, PHP, MySQL, React, JavaScript, jQuery, HTML, CSS, and modern AI tools like GitHub Copilot to deliver high-quality solutions with efficiency.</p>
-                    <p>My work spans news, media, portfolio, and online publishing platforms, where I focus on clean architecture, intuitive interfaces, and performance-driven development.</p>
-                    
-                    <h3>What I Do</h3>
-                    <ul>
-                        <li>Build and maintain large-scale web applications</li>
-                        <li>Create responsive, modern UI using CSS, jQuery, Bootstrap</li>
-                        <li>Develop and integrate APIs for web and mobile</li>
-                        <li>Identify and resolve security, performance, and accessibility issues</li>
-                        <li>Deploy and manage applications on AWS EC2</li>
-                        <li>Lead teams, guide technology choices, and improve workflows</li>
-                        <li>Accelerate development using GitHub Copilot + VS Code</li>
-                    </ul>
-                    
-                    <h3>How I Work</h3>
-                    <ul>
-                        <li>Minimal, efficient, and user-first</li>
-                        <li>Agile & Kanban workflows</li>
-                        <li>Clear communication in distributed teams</li>
-                        <li>Clean code and scalable solutions</li>
-                    </ul>
-                    
-                    <h3>What I Believe</h3>
-                    <p>Great digital experiences are simple, fast, and purposeful. I aim to create products that feel effortless to use and reliable at scale.</p>
-                </div>
+            <div class="about-text">
+              <p>
+                14 Years of experience in leading & developing web application,
+                mainly Generative AI, GITHUB Copilot, Drupal, PHP, MySQL,
+                JQuery, Reacts, JavaScript, HTML and CSS Requirement Gathering,
+                Analysis the requirement and providing best solutions
+              </p>
+              <p>
+                My work spans news, media, portfolio, and online publishing
+                platforms, where I focus on clean architecture, intuitive
+                interfaces, and performance-driven development.
+              </p>
+
+              <h3>What I Do</h3>
+              <ul>
+                <li>Build and maintain large-scale web applications</li>
+                 <li>Develop and integrate APIs for web and mobile</li>
+                  <li>Develop and Spaces on huggingface</li>
+                   <li>Develop Web Application using github copilot</li>
+                <li>
+                  Setup Development Environment Stack for local and Staging and
+                  production
+                </li>
+                <li>
+                  Create responsive, modern UI using CSS, jQuery, Bootstrap
+                </li>
+               
+                <li>
+                  Identify and resolve security, performance, and accessibility
+                  issues
+                </li>
+                <li>Deploy and manage applications on AWS EC2</li>
+                <li>
+                  Lead teams, guide technology choices, and improve workflows
+                </li>
+                <li>Accelerate development using GitHub Copilot + VS Code</li>
+              </ul>
+
+              <h3>How I Work</h3>
+              <ul>
+                <li>Minimal, efficient, and user-first</li>
+                <li>Agile & Kanban workflows</li>
+                <li>Clear communication in distributed teams</li>
+                <li>Clean code and scalable solutions</li>
+              </ul>
+
+              <h3>What I Believe</h3>
+              <p>
+                Great digital experiences are simple, fast, and purposeful. I
+                aim to create products that feel effortless to use and reliable
+                at scale.
+              </p>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
+      <!-- Skills Section -->
+      <section id="skills" class="skills-section">
         <div class="container">
-            <div class="section-title">
-                <h2>Skills</h2>
+          <div class="section-title">
+            <h2>Skills</h2>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="fab fa-github"></i>
+              <h3>AI Builder</h3>
             </div>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fab fa-php"></i>
-                    <h3>PHP</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-drupal"></i>
-                    <h3>Drupal</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>MySQL</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-js"></i>
-                    <h3>JavaScript</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-react"></i>
-                    <h3>React</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-dollar-sign"></i>
-                    <h3>jQuery</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-css3-alt"></i>
-                    <h3>CSS</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-bootstrap"></i>
-                    <h3>Bootstrap</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-html5"></i>
-                    <h3>XHTML</h3>
-                </div>
+              <div class="skill-card">
+              <i class="fab fa-github"></i>
+              <h3>GITHUB Copilot Developer</h3>
             </div>
+            <div class="skill-card">
+              <i class="fab fa-drupal"></i>
+              <h3>Drupal</h3>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-php"></i>
+              <h3>PHP</h3>
+            </div>
+
+            <div class="skill-card">
+              <i class="fas fa-database"></i>
+              <h3>MySQL</h3>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-js"></i>
+              <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-react"></i>
+              <h3>React</h3>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-dollar-sign"></i>
+              <h3>jQuery</h3>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-html5"></i>
+              <h3>HTML</h3>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-css3-alt"></i>
+              <h3>CSS</h3>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-bootstrap"></i>
+              <h3>Bootstrap</h3>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-html5"></i>
+              <h3>XHTML</h3>
+            </div>
+                      <div class="skill-card">
+              <i class="fab fa-aws"></i>
+              <h3>AWS</h3>
+            </div>
+                                  <div class="skill-card">
+              <i class="fab fa-laptop-code"></i>
+              <h3>Hugging Face</h3>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume-section">
+      <!-- Resume Section -->
+      <section id="resume" class="resume-section">
         <div class="container">
-            <div class="section-title">
-                <h2>Resume</h2>
+          <div class="section-title">
+            <h2>Resume</h2>
+          </div>
+          <div class="resume-content">
+            <div class="resume-column">
+              <h3>EDUCATION</h3>
+              <div class="resume-item">
+                <h4>Web and Mobile Application Development</h4>
+                <div class="resume-date">01/04/2008 — 30/12/2025</div>
+                <p class="resume-company">Master of Computer Application</p>
+                <p class="resume-description">
+                  Information and Communication Technologies
+                </p>
+              </div>
             </div>
-            <div class="resume-content">
-                <div class="resume-column">
-                    <h3>EDUCATION</h3>
-                    <div class="resume-item">
-                        <h4>Web and Mobile Application Development</h4>
-                        <div class="resume-date">01/10/2019 — 20/10/2021</div>
-                        <p class="resume-company">Cactus Education</p>
-                        <p class="resume-description">Information and Communication Technologies</p>
-                        <a href="#" class="btn btn-primary btn-sm">View the Diploma</a>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Informatics</h4>
-                        <div class="resume-date">01/09/2016 — 31/05/2019</div>
-                        <p class="resume-company">SHMT "Lutfi Musiqi"</p>
-                        <p class="resume-description">Information Technology</p>
-                        <a href="#" class="btn btn-primary btn-sm">View the Diploma</a>
-                    </div>
-                </div>
-                <div class="resume-column">
-                    <h3>TRAINING COURSES</h3>
-                    <div class="resume-item">
-                        <h4>React - The Complete Guide (incl. React Router & Redux)</h4>
-                        <div class="resume-date">Current</div>
-                        <p class="resume-company">Udemy</p>
-                        <a href="#" class="btn btn-primary btn-sm">View the Course</a>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Web Development</h4>
-                        <div class="resume-date">24/08/2021</div>
-                        <p class="resume-company">Open Data Kosovo</p>
-                        <a href="#" class="btn btn-primary btn-sm">View the Certificate</a>
-                    </div>
-                    <div class="resume-item">
-                        <h4>IT Essentials</h4>
-                        <div class="resume-date">30/06/2020</div>
-                        <p class="resume-company">Cisco Networking Academy</p>
-                        <a href="#" class="btn btn-primary btn-sm">View the Certificate</a>
-                    </div>
-                </div>
-            </div>
+            <div class="resume-column">
+              <h3>TRAINING COURSES</h3>
+              <div class="resume-item">
+                <h4>Infosys Certified Generative AI Professional Intermediate in 2025</h4>
+                <h4>Infosys Certified Google Generative AI for leader in 2025</h4>
+                <h4>Certified Prompt Engineering and LLM with Lang Chain in Year 2024</h4>
+                 <h4>Certified in GITHUB COPILOT Developer in Year 2024</h4> 
+                 <h4>Drupal Certified from Acquia Certification in year 2014</h4>                                         
+              </div>
+     
+
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio-section">
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio-section">
         <div class="container">
-            <div class="section-title">
-                <h2>Portfolio</h2>
-            </div>
-            <div class="portfolio-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web Design</button>
-                <button class="filter-btn" data-filter="app">App Development</button>
-                <button class="filter-btn" data-filter="ui">UI/UX</button>
-            </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="web">
-                    <div class="portfolio-image">
-                        <img src="profile_400x300.png" alt="Project 1">
-                        <div class="portfolio-overlay">
-                            <h4>E-Commerce Platform</h4>
-                            <p>Web Design</p>
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
-                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
-                            </div>
-                        </div>
+          <div class="section-title">
+            <h2>Portfolio</h2>
+          </div>
+          <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+            <button class="filter-btn" data-filter="app">
+              App Development
+            </button>
+            <button class="filter-btn" data-filter="spaces">
+              Spaces
+            </button>
                     </div>
+          <div class="portfolio-grid">
+            <div class="portfolio-item" data-category="web">
+              <div class="portfolio-image">
+                <img src="./portfolio/Financial-tool.png" alt="Financial-tool" />
+                <div class="portfolio-overlay">
+                  <h4>Financial-tool Platform</h4>
+                  <p>Web Development</p>
+                  <div class="portfolio-links">
+                    <a href="https://www.nidhro.com/" class="portfolio-link" target="_blank"
+                      ><i class="fas fa-link"></i
+                    ></a>
+                    <a href="#" class="portfolio-link"
+                      ><i class="fas fa-eye"></i
+                    ></a>
+                  </div>
                 </div>
+              </div>
+            </div>
+            <div class="portfolio-item" data-category="web">
+              <div class="portfolio-image">
+                <img src="./portfolio/CRM-web.png" alt="The Next-Generation CRM" />
+                <div class="portfolio-overlay">
+                  <h4>Customer Relationship Management</h4>
+                  <p>Web Development</p>
+                  <div class="portfolio-links">
+                    <a href="#" class="portfolio-link"
+                      ><i class="fas fa-link"></i
+                    ></a>
+                    <a href="#" class="portfolio-link"
+                      ><i class="fas fa-eye"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
                 <div class="portfolio-item" data-category="app">
-                    <div class="portfolio-image">
-                        <img src="profile_400x300.png" alt="Project 2">
-                        <div class="portfolio-overlay">
-                            <h4>Task Management App</h4>
-                            <p>App Development</p>
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
-                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
-                            </div>
-                        </div>
-                    </div>
+              <div class="portfolio-image">
+                <img src="./portfolio/Money-management-app.png" alt="Expences Tracker" />
+                <div class="portfolio-overlay">
+                  <h4>Expence Management App</h4>
+                  <p>App Development</p>
+                  <div class="portfolio-links">
+                    <a href="#" class="portfolio-link"
+                      ><i class="fas fa-link"></i
+                    ></a>
+                    <a href="#" class="portfolio-link"
+                      ><i class="fas fa-eye"></i
+                    ></a>
+                  </div>
                 </div>
-                <div class="portfolio-item" data-category="ui">
-                    <div class="portfolio-image">
-                        <img src="profile_400x300.png" alt="Project 3">
-                        <div class="portfolio-overlay">
-                            <h4>Restaurant Dashboard</h4>
-                            <p>UI/UX</p>
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
-                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="web">
-                    <div class="portfolio-image">
-                        <img src="profile_400x300.png" alt="Project 4">
-                        <div class="portfolio-overlay">
-                            <h4>Corporate Website</h4>
-                            <p>Web Design</p>
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
-                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="app">
-                    <div class="portfolio-image">
-                        <img src="profile_400x300.png" alt="Project 5">
-                        <div class="portfolio-overlay">
-                            <h4>Fitness Tracker</h4>
-                            <p>App Development</p>
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
-                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="ui">
-                    <div class="portfolio-image">
-                        <img src="profile_400x300.png" alt="Project 6">
-                        <div class="portfolio-overlay">
-                            <h4>Banking Interface</h4>
-                            <p>UI/UX</p>
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
-                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+            <div class="portfolio-item" data-category="web">
+              <div class="portfolio-image">
+                <img src="./portfolio/Modern-tool-app" alt="Daily Use Utility tool" />
+                <div class="portfolio-overlay">
+                  <h4>Daily Use Utility tool</h4>
+                  <p>Web Development</p>
+                  <div class="portfolio-links">
+                    <a href="https://technomindai.in/" class="portfolio-link" target="_blank"
+                      ><i class="fas fa-link"></i
+                    ></a>
+                    <a href="#" class="portfolio-link"
+                      ><i class="fas fa-eye"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item" data-category="web">
+              <div class="portfolio-image">
+                <img src="/portfolio/Fitness -Tracking-web.png" alt="Fitness Tracking" />
+                <div class="portfolio-overlay">
+                  <h4>Fitness Tracking</h4>
+                  <p>Web Development</p>
+                  <div class="portfolio-links">
+                    <a href="#" class="portfolio-link"
+                      ><i class="fas fa-link"></i
+                    ></a>
+                    <a href="#" class="portfolio-link"
+                      ><i class="fas fa-eye"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item" data-category="app">
+              <div class="portfolio-image">
+                <img src="./portfolio/trending-hashtag-gen-app.png" alt="Couple Name Trending Hashtag Generator" />
+                <div class="portfolio-overlay">
+                  <h4>Couple Name Trending Hashtag Generator</h4>
+                  <p>App Development</p>
+                  <div class="portfolio-links">
+                    <a href="#" class="portfolio-link"
+                      ><i class="fas fa-link"></i
+                    ></a>
+                    <a href="#" class="portfolio-link"
+                      ><i class="fas fa-eye"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item" data-category="web">
+              <div class="portfolio-image">
+                <img src="./portfolio/Analytice-tools-web.png" alt="Self hosted Web Analytice-tools just like Google Analysis"/>
+                <div class="portfolio-overlay">
+                  <h4>Self hosted Web Analytice-tools just like Google Analysis</h4>
+                  <p>Web Development</p>
+                  <div class="portfolio-links">
+                    <a href="#" class="portfolio-link"
+                      ><i class="fas fa-link"></i
+                    ></a>
+                    <a href="#" class="portfolio-link"
+                      ><i class="fas fa-eye"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+           <div class="portfolio-item" data-category="spaces">
+              <div class="portfolio-image">
+                <img src="./portfolio/Generative-ai.png" alt="Qustion and Answer Generator from Document"/>
+                <div class="portfolio-overlay">
+                  <h4>Qustion and Answer Generator from Document</h4>
+                  <p>Generative AI</p>
+                  <div class="portfolio-links">
+                    <a href="#" class="portfolio-link"
+                      ><i class="fas fa-link"></i
+                    ></a>
+                    <a href="#" class="portfolio-link"
+                      ><i class="fas fa-eye"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+           <div class="portfolio-item" data-category="spaces">
+              <div class="portfolio-image">
+                <img src="./portfolio/Generative-ai.png" alt="Youtube Summarizer"/>
+                <div class="portfolio-overlay">
+                  <h4><Summarize youtube video></h4>
+                  <p>Generative AI</p>
+                  <div class="portfolio-links">
+                    <a href="#" class="portfolio-link"
+                      ><i class="fas fa-link"></i
+                    ></a>
+                    <a href="#" class="portfolio-link"
+                      ><i class="fas fa-eye"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services-section">
+      <!-- Services Section -->
+      <section id="services" class="services-section">
         <div class="container">
-            <div class="section-title">
-                <h2>Services</h2>
+          <div class="section-title">
+            <h2>Services</h2>
+          </div>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <h3>Web Development</h3>
+              <p>
+                Building responsive and modern websites using the latest
+                technologies. From simple web application to complex web
+                applications.
+              </p>
             </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3>Web Development</h3>
-                    <p>Building responsive and modern websites using the latest technologies. From simple landing pages to complex web applications.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Mobile App Development</h3>
-                    <p>Creating cross-platform mobile applications that work seamlessly on iOS and Android devices.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <h3>UI/UX Design</h3>
-                    <p>Designing intuitive and beautiful user interfaces that provide excellent user experiences.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-                    <h3>E-Commerce Solutions</h3>
-                    <p>Developing complete e-commerce platforms with payment integration and inventory management.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>Backend Development</h3>
-                    <p>Building robust and scalable backend systems with RESTful APIs and database management.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3>Maintenance & Support</h3>
-                    <p>Providing ongoing maintenance and technical support to keep your applications running smoothly.</p>
-                </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3>Mobile App Development</h3>
+              <p>
+                Creating cross-platform mobile applications that work seamlessly
+                on iOS and Android devices.
+              </p>
             </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <h3>UI/UX Design</h3>
+              <p>
+                Designing intuitive and beautiful user interfaces that provide
+                excellent user experiences.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <h3>E-Commerce Solutions</h3>
+              <p>
+                Developing complete e-commerce platforms with payment
+                integration and inventory management.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3>Backend Development</h3>
+              <p>
+                Building robust and scalable backend systems with RESTful APIs
+                and database management.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-cogs"></i>
+              </div>
+              <h3>Maintenance & Support</h3>
+              <p>
+                Providing ongoing maintenance and technical support to keep your
+                applications running smoothly.
+              </p>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
         <div class="container">
-            <div class="section-title">
-                <h2>Contact</h2>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Location</h4>
-                            <p>New Delhi, India</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Email</h4>
-                            <p>john.doe@example.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Phone</h4>
-                            <p>+91 1234567890</p>
-                        </div>
-                    </div>
+          <div class="section-title">
+            <h2>Contact</h2>
+          </div>
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <p>wdranjeet.m@gmail.com</p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Scroll to Top Button -->
-    <button class="scroll-to-top" id="scrollToTop">
+      <!-- Scroll to Top Button -->
+      <button class="scroll-to-top" id="scrollToTop">
         <i class="fas fa-arrow-up"></i>
-    </button>
-
+      </button>
     </main>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
