@@ -132,7 +132,7 @@ Contributions, issues, and feature requests are welcome!
 ## 👤 Author
 
 **Your Name**
-- Website: [Visit My Website](https://wdranjeet.github.io/portfolio/)
+- Website: [Visit My Website](https://wdranjeet.github.io)
 - GitHub: [@wdranjeet](https://github.com/wdranjeet)
 - LinkedIn: [Ranjeet](https://linkedin.com/in/mahtoranjeet)
 
